@@ -4,7 +4,6 @@ import { ValidationPipe } from '@nestjs/common';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { join } from 'path';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
@@ -20,13 +19,14 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('ADM GYM PRO')
-    .setDescription('API para gerenciar membros, planos e emitir recibos de pagamento.')
+    .setDescription('API para gerenciar membros de academia, planos de assinatura e gerar recibos de pagamento, permitindo interações e rastreamento eficiente de membros e transações.')
     .setVersion('0.0.1')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('swagger', app, document);
-
+  SwaggerModule.setup('swagger', app, document, {
+    jsonDocumentUrl: 'swagger/json',
+  });
   const reflector = app.get(Reflector);
   app.useGlobalGuards(new JwtAuthGuard(reflector));
 
