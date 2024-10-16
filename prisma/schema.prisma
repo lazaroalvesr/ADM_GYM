@@ -1,0 +1,70 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Admin {
+  id           String     @id @default(uuid())
+  name         String
+  email        String     @unique
+  profileImage String?
+  password     String
+  plans        Plan[]     
+  customers    Customer[] 
+  receipts     Receipt[]  
+}
+
+
+model Plan {
+  id          String     @id @default(uuid())
+  name        String     @unique
+  description String?
+  price       Float
+  adminId     String
+  admin       Admin      @relation(fields: [adminId], references: [id], onDelete: Cascade) 
+  customers   Customer[] 
+}
+
+model Instructor {
+  id    String @id @default(uuid())
+  name  String
+  email String
+}
+
+model Customer {
+  id                   String             @id @default(uuid())
+  name                 String
+  email                String             @unique
+  telephone            Int
+  startDate            DateTime           @default(now())
+  endDate              DateTime
+  updatedAt            DateTime           @updatedAt()
+  subscriptionStatusId String
+  status               SubscriptionStatus  @relation(fields: [subscriptionStatusId], references: [id])
+  plan                 Plan               @relation(fields: [planId], references: [id]) 
+  planId               String
+  adminId              String
+  admin                Admin              @relation(fields: [adminId], references: [id], onDelete: Cascade) 
+}
+
+model SubscriptionStatus {
+  id       String     @id @default(uuid())
+  name     String
+  Customer Customer[] 
+}
+
+model Receipt {
+  id          String   @id @default(uuid())
+  name        String
+  email       String
+  paymentDate DateTime
+  dueDate     DateTime
+  value       Int
+  adminId     String
+  admin       Admin    @relation(fields: [adminId], references: [id], onDelete: Cascade) // Only here
+}
