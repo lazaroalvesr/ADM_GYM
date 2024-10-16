@@ -15,7 +15,7 @@ async function bootstrap() {
   });
 
   const config = new DocumentBuilder()
-    .setTitle('API de Gestão de Academia')
+    .setTitle('GymPro API')
     .setDescription('API para gerenciar membros, planos e emitir recibos de pagamento.')
     .setVersion('0.0.1')
     .build();

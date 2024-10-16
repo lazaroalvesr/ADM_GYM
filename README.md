@@ -1,73 +1,40 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+# 🏋🏼‍♂️GymPro API🏋🏼‍♂️
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+A Academia API foi desenvolvida para gerenciar academias, oferecendo funcionalidades para controle de alunos, treinos, planos, e muito mais. A API permite o cadastro de novos alunos, a gestão dos planos de assinatura e a criação de rotinas de treino personalizadas.
 
-## Description
+![App Screenshot](./public/img/GYM_PRO.png)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Tecnologias Utilizadas:
 
-## Installation
+- NestJS
+- Prisma
+- Supabase
+- JWT para autenticação
 
-```bash
-$ npm install
-```
+## Funcionalidades
 
-## Running the app
+- **Autenticação**: Sistema de login com JWT.
+- **Gerenciamento de alunos**: Cadastro, edição e exclusão de alunos.
+- **Planos de assinatura**: Criação e gestão de planos de assinatura (mensal, trimestral, etc.).
+- **Recibos de pagamento**: Geração de recibos em PDF para pagamentos de assinaturas, fornecendo aos alunos um registro formal de suas transações.
 
-```bash
-# development
-$ npm run start
+### Funcionalidades da Documentação Swagger
+A documentação da API está disponível através do Swagger. Você pode acessá-la no seguinte link:
 
-# watch mode
-$ npm run start:dev
+- [Swagger UI](https://github.com/lazaroalvesr/gym_pro/swagger)
+- **Interface Interativa**: Teste os endpoints da API diretamente no navegador.
+- **Informações Detalhadas**: Cada endpoint inclui detalhes como parâmetros de requisição, corpo da requisição, formatos de resposta e mensagens de erro possíveis.
+- **Autenticação**: A documentação inclui informações sobre como autenticar utilizando JWT.
 
-# production mode
-$ npm run start:prod
-```
+## Authors
 
-## Test
+- [@lazaroalvesr](https://github.com/lazaroalvesr)
 
-```bash
-# unit tests
-$ npm run test
 
-# e2e tests
-$ npm run test:e2e
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.lazaroalvesr.com/)
 
-# test coverage
-$ npm run test:cov
-```
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/l%C3%A1zaro-alves-r/)
 
-## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
