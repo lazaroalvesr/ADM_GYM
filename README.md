@@ -16,7 +16,7 @@ A Academia API foi desenvolvida para gerenciar academias, oferecendo funcionalid
 
 - **Autenticação**: Sistema de login com JWT.
 - **Gerenciamento de alunos**: Cadastro, edição e exclusão de alunos.
-- **Planos de assinatura**: Criação e gestão de planos de assinatura (mensal, trimestral, etc.).
+- **Planos de assinatura**: Criação e gestão de planos de assinatura (mensal).
 - **Recibos de pagamento**: Geração de recibos em PDF para pagamentos de assinaturas, fornecendo aos alunos um registro formal de suas transações.
 
 ### Funcionalidades da Documentação Swagger
