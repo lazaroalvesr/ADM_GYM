@@ -20,7 +20,7 @@ async function bootstrap() {
   });
 
   const config = new DocumentBuilder()
-    .setTitle('GYM PRO')
+    .setTitle('ADM GYM PRO')
     .setDescription('API para gerenciar membros, planos e emitir recibos de pagamento.')
     .setVersion('0.0.1')
     .build();
