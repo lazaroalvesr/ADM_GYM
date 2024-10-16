@@ -12,7 +12,7 @@ async function bootstrap() {
 
   app.useStaticAssets(join(__dirname, '..', 'node_modules', 'swagger-ui-dist'));
   app.enableCors({
-    origin: "https://adm-gym.vercel.app/",
+    origin: "https://gympro-snowy.vercel.app/",
     methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"],
     credentials: true
   });
