@@ -9,7 +9,6 @@ import { join } from 'path';
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-  app.useStaticAssets(join(__dirname, '..', 'node_modules', 'swagger-ui-dist'));
 
   app.useGlobalPipes(new ValidationPipe());
 
