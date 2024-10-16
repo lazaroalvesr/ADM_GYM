@@ -3,7 +3,7 @@
 
 A Academia API foi desenvolvida para gerenciar academias, oferecendo funcionalidades para controle de alunos, treinos, planos, e muito mais. A API permite o cadastro de novos alunos, a gestão dos planos de assinatura e a criação de rotinas de treino personalizadas.
 
-![App Screenshot](./public/img/GYM_PRO.png)
+![App Screenshot](./public/img/GYM-PRO.png)
 
 ## Tecnologias Utilizadas:
 
