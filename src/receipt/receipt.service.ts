@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { PrismaService } from '../prisma/prisma.service';
 import * as PDFDocument from 'pdfkit';
 import * as fs from 'fs';
 import * as path from 'path';
-import { ReceiptCreate } from 'src/dto/receipt/createReceipt.dtp';
-import { formatDate } from 'src/lib/formated';
+import { ReceiptCreate } from '../dto/receipt/createReceipt.dtp';
+import { formatDate } from '../lib/formated';
 
 @Injectable()
 export class ReceiptService {
