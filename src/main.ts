@@ -9,7 +9,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   app.enableCors({
-    origin: "http://localhost:3001/",
+    origin: "https://adm-gym.vercel.app/",
     methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"],
     credentials: true
   });
