@@ -22,7 +22,7 @@ A Academia API foi desenvolvida para gerenciar academias, oferecendo funcionalid
 ### Funcionalidades da Documentação Swagger
 A documentação da API está disponível através do Swagger. Você pode acessá-la no seguinte link:
 
-- [Swagger UI](https://github.com/lazaroalvesr/gym_pro/swagger)
+- [Swagger UI](https://gym-pro-api.vercel.app/swagger)
 - **Interface Interativa**: Teste os endpoints da API diretamente no navegador.
 - **Informações Detalhadas**: Cada endpoint inclui detalhes como parâmetros de requisição, corpo da requisição, formatos de resposta e mensagens de erro possíveis.
 - **Autenticação**: A documentação inclui informações sobre como autenticar utilizando JWT.
