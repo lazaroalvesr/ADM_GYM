@@ -1,7 +1,7 @@
 
 # 🏋🏼‍♂️GymPro API🏋🏼‍♂️
 
-A Academia API foi desenvolvida para gerenciar academias, oferecendo funcionalidades para controle de alunos, treinos, planos, e muito mais. A API permite o cadastro de novos alunos, a gestão dos planos de assinatura e a criação de rotinas de treino personalizadas.
+A Academia API foi criada para facilitar a gestão de academias, oferecendo controle completo sobre alunos, planos de assinatura, treinos e rotinas personalizadas. Com ela, é possível cadastrar e gerenciar alunos, criar e administrar planos de assinatura,
 
 ![App Screenshot](./public/img/GYM-PRO.png)
 
@@ -11,14 +11,16 @@ A Academia API foi desenvolvida para gerenciar academias, oferecendo funcionalid
 - Prisma
 - Supabase
 - JWT para autenticação
-
+- Cron Jobs
+- 
 ## Funcionalidades
 
 - **Autenticação**: Sistema de login com JWT.
-- **Gerenciamento de alunos**: Cadastro, edição e exclusão de alunos.
-- **Planos de assinatura**: Criação e gestão de planos de assinatura (mensal).
-- **Recibos de pagamento**: Geração de recibos em PDF para pagamentos de assinaturas, fornecendo aos alunos um registro formal de suas transações.
-
+- **Gerenciamento de Alunos**: Cadastro, edição e exclusão de alunos.
+- **Planos de Assinatura**: Criação e gestão de planos de assinatura (mensal).
+- **Recibos de Pagamento**: Geração de recibos em PDF para pagamentos de assinaturas, fornecendo aos alunos um registro formal de suas transações.
+- **Tarefas Agendadas (Cron)**: Verificação periódica para identificar alunos com mensalidades atrasadas.
+ 
 ### Funcionalidades da Documentação Swagger
 A documentação da API está disponível através do Swagger. Você pode acessá-la no seguinte link:
 
