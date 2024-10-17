@@ -12,7 +12,7 @@ A Academia API foi criada para facilitar a gestão de academias, oferecendo cont
 - Supabase
 - JWT para autenticação
 - Cron Jobs
-- 
+  
 ## Funcionalidades
 
 - **Autenticação**: Sistema de login com JWT.
